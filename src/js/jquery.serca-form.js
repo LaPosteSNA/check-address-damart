@@ -645,7 +645,7 @@ if (typeof jQuery === 'undefined') {
                 language: 'fr', // Langage des messages d'erreur
                 lockFormRow6: true, // Bloque la saisie des autres champs s le champ d'adresse 6 n'ets pas valide
                 displayAddressLabel: false, // Affiche l'adresse complète validée en dessous du formulaire
-                corpsProxy: "https://cors-proxy.seguret.org/", // Url du proxy cors
+                corpsProxy: "", // Url du proxy cors
                 distantDNS: "https://www.serca.preprod.laposte.fr", // Nom de domaine du service serca
             };
 
