@@ -1,0 +1,88 @@
+{
+  "title": "serca-form",
+  "name": "serca-form",
+  "version": "0.0.1",
+  "description": "Interface de demonstration des services adresses Serca.",
+  "keywords": [
+    "css",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "homepage": "https://lapostesna.github.io/serca-form/",
+  "bugs": {
+    "url": "https://github.com/LaPosteSNA/serca-form/issues",
+    "email": "philippe.clech@laposte.fr"
+  },
+  "license": "MIT",
+  "author": "La Poste SNA",
+  "contributors": [
+    "Philippe CLEC'H"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LaPosteSNA/serca-form.git"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "font-awesome": "4.7.0",
+    "jquery": "^3.2.1",
+    "jquery.easing": "^1.4.1",
+    "magnific-popup": "^1.1.0",
+    "popper.js": "1.12.3",
+    "scrollreveal": "3.3.6",
+    "clipboard": "^1.7.1"
+  },
+  "devDependencies": {
+    "ajv": "^5.2.3",
+    "cat": "^0.2.0",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.7.2",
+    "gaze": "^1.1.2",
+    "grunt": "^1.0.1",
+    "grunt-casperjs": "^2.2.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-css": "^0.5.4",
+    "grunt-eslint": "^20.1.0",
+    "grunt-karma": "^0.12.0",
+    "grunt-karma-coveralls": "^2.5.4",
+    "jshint": "^2.9.5",
+    "karma": "^1.7.1",
+    "karma-coverage": "^1.1.1",
+    "karma-coverage-istanbul-reporter": "^1.3.0",
+    "karma-coveralls": "^1.1.2",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-qunit": "^1.2.1",
+    "karma-spec-reporter": "0.0.31",
+    "nyc": "11.2.1",
+    "qunit-assert-compare": "^1.1.0",
+    "qunitjs": "^2.4.0",
+    "sinon": "^4.1.1",
+    "sinon-qunit": "^2.0.0"
+  },
+  "nyc": {
+    "exclude": [
+      "Gruntfile.js",
+      "karma.conf.js"
+    ],
+    "include": [
+      "src/**/*.js"
+    ],
+    "check-coverage": false
+  },
+  "scripts": {
+    "preinstall": "npm install --quiet -g eslint http-server casperjs phantomjs-prebuilt utils grunt karma qunit qunitjs http-server nyc coveralls",
+    "lint": "grunt lint",
+    "build": "grunt && cat coverage/reports/coverages/text.txt",
+    "start": "start-server-with-watch-js-css.sh",
+    "test": "grunt test && cat coverage/reports/coverages/text.txt",
+    "travis": "grunt travis && cat coverage/reports/coverages/text.txt && cat coverage/reports/coverages/report-lcov/lcov.info | coveralls",
+    "http-server": "http-server",
+    "view-coverage": "http-server \"./coverage/reports/coverages/report-html\""
+  }
+}

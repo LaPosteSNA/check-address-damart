@@ -1,0 +1,13 @@
+{
+  "globals": {
+    "$": false,
+    "phantom": false,
+    "casper": true,
+    "require": true,
+    "patchRequire": true,
+    "CasperError": true,
+    "slimer": false,
+    "jquery": false,
+    "__utils__": true
+  }
+}

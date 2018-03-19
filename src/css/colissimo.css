@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'ACustomFont';
+    /*a name to be used later*/
+    /*URL to font*/
+    src: url('../../vendor/fonts/GSR.ttf');
+}
+
+* {
+    font-family: 'ACustomFont', 'Google Sans', 'Segoe UI', Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 496px;
+    min-height: 100vh;
+    height: 100vh;
+    /*background: url(images/bg.jpg) no-repeat center center fixed;*/
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#address-autocomplete-form {
+    -webkit-box-shadow: 5px 5px 10px 5px #000000;
+    -moz-box-shadow: 5px 5px 10px 5px #000000;
+    box-shadow: 5px 5px 10px 5px #000000;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=134, Strength=10);
+    -o-box-shadow: 5px 5px 10px 5px #000000;
+}
+
+
+/* à quoi cela sert? */
+
+.centerBlock {
+    display: table;
+    margin: auto;
+    background-size: contain;
+    text-align: center;
+    /*background-image: url("../../images/envelop_result.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    align-content: center;
+}
+
+
+/* à quoi cela sert? */
+
+.section_centrale {
+    height: 326px;
+    background: url("../../images/envelop_result.png") no-repeat center;
+    background-size: contain;
+    text-align: center;
+    align-content: center;
+}
+
+
+/* il ne faut pas utiliser une couleur spécifique mais se baser sur les couleurs bootstarp primary,...*/
+
+.color_red {
+    color: red;
+}
+
+
+/* il ne faut pas utiliser une couleur spécifique mais se baser sur les couleurs bootstarp primary,...*/
+
+.form_bck_red {
+    background-color: red;
+}
+
+
+/* TODO n'applique cela que si un parametre est positionné par le client et ne l'appliquer q'au formulaire de sasie d'adresse --> on ne va pas l'appliquer ppour tous les imput du site si un client l'intégre dans son site */
+
+input.uppercase {
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: transparent;
+    text-shadow: 2px 2px 3px #888888;
+}
+
+footer>span>i {
+    color: #e0a800;
+}
+
+footer>span>i>a:visited {
+    color: gray;
+}
+
+footer>span>i>a:not(:visited) {
+    color: yellow;
+}
+
+
+/* TODO passer civ en gender */
+
+
+/* TODO : ne pas mettre en dur les tailles utilises bootstrap */
+
+#address_row1_civ {
+    width: 120px;
+}
+
+
+/* TODO : garder les couleurs bootstrap primary, alert, sucess,.... */
+
+.gender_male.active,
+.gender_female.active {
+    background-color: #a2ffa1 !important;
+    color: black;
+}
+
+.gender_male.active::before,
+.gender_female.active::before {
+    /*font-family: FontAwesome;*/
+    /*content: "\f058"; !* &#xf14a; *!*/
+    content: "\002705";
+}
+
+#helptuto {
+    float: right;
+}
+
+.address-autocomplete-result-list-style-small .text-muted {
+    color: gray !important;
+}
+
+.address-autocomplete-result-list-style-small .text-focus {
+    color: orangered !important;
+}
+
+.address-autocomplete-result-list-style-small strong {
+    color: green !important;
+}

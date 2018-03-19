@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - node
+script:
+  - npm run lint
+  - npm run travis
+before_script:
+  - npm start &
+  - sleep 5
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+notifications:
+  email:
+    recipients:
+      - claude.seguret@laposte.fr
+      - philippe.clech@laposte.fr
+    on_success: change
+    on_failure: always

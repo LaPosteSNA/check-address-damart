@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUnit Test Suite</title>
+    <script src="vendor/js/jquery-3.2.1.min.js"></script>
+    <script src="vendor/js/jquery-ui.min.js"></script>
+    <script src="vendor/js/popper.min.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <!-- Notre plugin -->
+    <!--<script src="dist/js/jquery.serca-form.min.js"></script>-->
+    <script src="src/js/jquery.serca-form.js"></script>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="vendor/css/bootstrap.css" />
+
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="vendor/css/bootstrap.css" />
+    <!-- Notre plugin -->
+    <link rel="stylesheet" href="dist/css/jquery.serca-form.min.css" />
+    <link rel="stylesheet" href="src/css/jquery.serca-form.css" />
+
+    <script src="node_modules/qunitjs/qunit/qunit.js"></script>
+    <link rel="stylesheet" href="node_modules/qunitjs/qunit/qunit.css">
+    <script src="test/spec/jquery.serca-form.spec.js"></script>
+</head>
+
+<body background="images/clavier.jpg">
+    <h1 id="qunit-header">QUnit Test Suite</h1>
+    <h2 id="qunit-banner"></h2>
+    <div id="qunit-testrunner-toolbar"></div>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests"></ol>
+    <!-- Notre plugin -->
+    <main>
+        <div id="serca-form"></div>
+    </main>
+
+
+    <script type="application/javascript">
+        // SERCA-FORM
+        $(document).ready(function() {
+            $("#serca-form").sercaForm({
+                backColor: "#f7f7f9",
+                autocompleteListStyle: "small",
+                nbDisplayedResults: 5,
+                fullAddressCopyOrder: "address_row1;address_row2;address_row3;address_row4;address_row5;address_row6",
+                oneFieldAddressRow1: false,
+                orderFieldAddressRow1: "first_name;last_name",
+                displayAddressLabel: true,
+                upperCaseFields: true,
+                lockFormAddressRow6: true,
+                maxRetries: 5,
+                maxRetriesTimeout: 10000,
+                ajaxTimeout: 3000
+            });
+        });
+        // SERCA-FORM
+    </script>
+
+</body>
+
+<footer>
+    LA POSTE - SNA<img src="images/Logo-La-Poste-mini.png" width="48px" height="22px">
+    <br/>
+    <span>Démonstration des services SERCA pour l'aide à la saisie de l'adresse</span>
+</footer>
+
+</html>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://lapostesna.github.io/" />
+<title>seleniumjson</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">seleniumjson</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/serca-form/</td>
+	<td></td>
+</tr>
+<!--Test saisie de code postal-->
+<tr>
+	<td>sendKeys</td>
+	<td>id=address_row6</td>
+	<td>33450</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>IZON</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=33207227Y6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=33207227Y6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=address_row6</td>
+	<td>33450 IZON</td>
+</tr>
+<!--Test saisie de code postal 2-->
+<tr>
+	<td>sendKeys</td>
+	<td>id=address_row6</td>
+	<td>33450</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>MONTUSSAN</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=332932249Z</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=332932249Z</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=address_row6</td>
+	<td>33450 MONTUSSAN</td>
+</tr>
+<!--Test saisie de code postal partiel-->
+<tr>
+	<td>open</td>
+	<td>/serca-form/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=address_row6</td>
+	<td>750</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>PARIS</td>
+	<td></td>
+</tr>
+<!--Test saisie de code postal partiel-->
+<tr>
+	<td>open</td>
+	<td>/serca-form/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=address_row6</td>
+	<td>3346</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ARSAC</td>
+	<td></td>
+</tr>
+<!--Test saisie de localité-->
+<tr>
+	<td>open</td>
+	<td>/serca-form/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=address_row6</td>
+	<td>féline</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>07340 FELINES</td>
+	<td></td>
+</tr>
+<!--Test saisie de localité commune fusionnée-->
+<tr>
+	<td>open</td>
+	<td>/serca-form/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=address_row6</td>
+	<td>moret</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>MORET LOING ET ORVANNE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ECUELLES</td>
+	<td></td>
+</tr>
+<!--Test saisie de localité ancienne commune fusionnée-->
+<tr>
+	<td>open</td>
+	<td>/serca-form/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=address_row6</td>
+	<td>pyla</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>LA TESTE DE BUCH</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>PYLA PLAGE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>PYLA SUR MER</td>
+	<td></td>
+</tr>
+<!--Test completion ligne5 et ligne 6-->
+<tr>
+	<td>open</td>
+	<td>/serca-form/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=address_row6</td>
+	<td>pyla</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>LA TESTE DE BUCH</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=3352923423</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=address_row6</td>
+	<td>33115 LA TESTE DE BUCH</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=address_row5</td>
+	<td>PYLA PLAGE</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=address_row6</td>
+	<td>pyla</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>LA TESTE DE BUCH</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=33529233ZZ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=address_row6</td>
+	<td>33115 LA TESTE DE BUCH</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=address_row5</td>
+	<td>PYLA SUR MER</td>
+</tr>
+</tbody></table>
+</body>
+</html>

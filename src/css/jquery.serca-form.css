@@ -1,0 +1,267 @@
+#address-autocomplete-form .col-form-label {
+    z-index: 100;
+    text-align: left;
+}
+
+#address-autocomplete-form {
+    margin-top: 0;
+    width: 100%;
+    background-color: #f7f7f9;
+}
+
+@media (min-width: 768px) {
+    #address-autocomplete-form .col-form-label {
+        text-align: right;
+    }
+    #address-autocomplete-form {
+        margin-top: 40px;
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+@media (min-width: 992px) {
+    #address-autocomplete-form {
+        width: 70%;
+    }
+}
+
+
+/* Bootstrap style pour le dropdown d'auto-completion */
+
+.ui-autocomplete {
+    position: absolute;
+    z-index: 1000;
+    margin-top: 2px;
+    padding: 0;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    cursor: default;
+}
+
+.ui-autocomplete>li.ui-state-focus {
+    /* masque les placeholder en cas de focus sur le champ */
+    background-color: rgba(0, 0, 0, .06);
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+
+/*#ui-id-1.ui-state-active,*/
+
+
+/*#ui-id-1.ui-widget-content .ui-state-active,*/
+
+
+/*#ui-id-1.ui-widget-header .ui-state-active,*/
+
+
+/*#ui-id-1 a.ui-button:active,*/
+
+
+/*#ui-id-1.ui-button:active,*/
+
+
+/*#ui-id-1.ui-button.ui-state-active:hover,*/
+
+
+/*.address-autocomplete-result-list:hover {*/
+
+
+/*background: rgba(0, 0, 0, .06) !important;*/
+
+
+/*}*/
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-state-active.ui-button:hover {
+    background: rgba(0, 0, 0, .06) !important;
+}
+
+.address-autocomplete-result-list-style-empty {
+    content: "";
+}
+
+
+/* .ui-autocomplete>li {*/
+
+
+/* la désactivation permet d'avoir un fond gris au survol d'un champ autocomplete sur toute la largeur et hauteur */
+
+
+/* padding: 3px 20px;*/
+
+
+/*}*/
+
+.ui-menu-item-wrapper {
+    /* permet d'aligner les valeurs remontées de l'autocomplete avec les champs input bootstrap */
+    padding: 0.5rem 0.75rem;
+}
+
+.ui-menu-item {
+    /* permet d'aligner les valeurs remontées de l'autocomplete avec les champs input bootstrap */
+    border-bottom: 1px solid rgba(0, 0, 0, .06);
+}
+
+.ui-menu .ui-menu-item a,
+.ui-autocomplete>li:hover {
+    cursor: pointer;
+}
+
+#address-autocomplete-form div.form-check {
+    position: relative;
+    display: block;
+    margin-bottom: 0rem;
+    padding-top: 0.5rem;
+}
+
+#address-autocomplete-form .form-check-label {
+    padding-right: 0.5em;
+    cursor: pointer;
+}
+
+
+/* TODO :  NON utiliser les balises bootsrap pour aligner text-center, ne pas pas refaire ce qui est prévu par bootstrap */
+
+.center-aligned {
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+}
+
+.footer-autocomplete {
+    text-align: right !important;
+}
+
+
+/* TODO :  NON utiliser les balises bootsrap pour dimensionner, ne pas pas refaire ce qui ets prévu par bootstrap */
+
+
+/* un dimensionement en fixe pose des probeme en responsive : ne pas mettre de taille*/
+
+
+/* TODO :  NON garder les espacements par défaut de bootstrap pour avoir une harmonie graphique */
+
+.wrapper {
+    position: relative;
+    z-index: 1000 !important;
+    display: none;
+    min-height: auto;
+    height: 326px;
+    text-align: center;
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    -o-transition: top 1s;
+    transition: top 1s;
+}
+
+
+/* TODO :  NON utiliser les balises bootsrap , ne pas pas refaire ce qui ets prévu par bootstrap */
+
+
+/* TODO :  NON garder les espacements par défaut de bootstrap pour avoir une harmonie graphique */
+
+
+/* TODO : ne pas utiliser de # mais des . pour povoir mettre plusieurs formulaire sur une me^me page */
+
+#fullAddress {
+    display: grid;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    margin: auto;
+    padding-top: 123px;
+    padding-bottom: 100px;
+    padding-left: 70px;
+    max-width: 400px;
+    vertical-align: bottom;
+    line-height: 10px;
+}
+
+
+/* TODO :  NON utiliser les balises bootsrap , ne pas pas refaire ce qui ets prévu par bootstrap */
+
+#fullAddress div:after {
+    width: 100%;
+    content: '';
+    line-height: 10px;
+}
+
+.text {
+    position: relative;
+    top: -330px;
+    right: 0;
+    /*position: absolute;*/
+    bottom: 0;
+    left: 0;
+    color: #000;
+    text-align: left;
+    white-space: pre;
+    justify-content: left;
+    align-items: left;
+}
+
+.ajax-loading {
+    background: url('../../images/ajax-loader.gif') no-repeat right center
+}
+
+
+/* TODO pour fullAddress utiliser les dimensionnements et alignements bootstrap */
+
+div[id='fullAddress']>div {
+    margin-right: auto;
+    margin-left: 0;
+    /*margin:auto;*/
+    max-width: 540px;
+    width: auto;
+    line-height: normal;
+    border: 1px transparent solid;
+}
+
+div[id='fullAddress']>div[class='row']>div:hover {
+    border: 1px black solid;
+    background-color: #e0a800;
+}
+
+div[id='fullAddress']>div:not(.row):hover {
+    border: 1px black solid;
+    background-color: #e0a800;
+}
+
+div[id='fullAddress']>div:active {
+    background-color: darkgray;
+    border: 1px transparent solid;
+}
+
+.copied {
+    border: 1px #333333 dashed !important;
+    background-color: whitesmoke !important;
+}
+
+
+/* TODO utiliser les alignement bootstrap */
+
+#btn_copy {
+    float: right;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="vendor/css/bootstrap.css" />
+    <!-- Notre plugin -->
+    <link rel="stylesheet" href="dist/css/jquery.serca-form.min.css" />
+    <!--<link rel="stylesheet" href="src/css/jquery.serca-form.css" />-->
+
+    <link rel="stylesheet" href="dist/css/colissimo.min.css" />
+    <link rel="stylesheet" href="vendor/css/font-awesome.css">
+</head>
+
+<body background="images/clavier.jpg">
+    <!-- Notre plugin -->
+    <main>
+        <div id="serca-form"></div>
+    </main>
+
+    <script src="vendor/js/jquery-3.2.1.min.js"></script>
+    <script src="vendor/js/jquery-ui.min.js"></script>
+    <script src="vendor/js/popper.min.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <!-- Notre plugin -->
+    <script src="dist/js/jquery.serca-form.min.js"></script>
+    <!--<script src="src/js/jquery.serca-form.js"></script>-->
+    <script type="application/javascript">
+        // SERCA-FORM
+        $(document).ready(function() {
+            $("#serca-form").sercaForm({
+                backColor: "#f7f7f9",
+                autocompleteListStyle: "small",
+                nbDisplayedResults: 5,
+                fullAddressCopyOrder: "address_row1;address_row2;address_row3;address_row4;address_row5;address_row6",
+                oneFieldAddressRow1: false,
+                orderFieldAddressRow1: "last_name;first_name",
+                displayAddressLabel: true,
+                upperCaseFields: true,
+                lockFormRow6: true,
+                maxRetries: 5,
+                maxRetriesTimeout: 10000,
+                ajaxTimeout: 3000
+            });
+        });
+        // SERCA-FORM
+    </script>
+    <footer>
+        La Poste - <abbr title="Service National de l'Adresse">SNA</abbr><img src="images/Logo-La-Poste-mini.png" width="48px" height="22px">
+    </footer>
+</body>
+
+
+
+</html>
