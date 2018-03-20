@@ -615,8 +615,8 @@ if (typeof jQuery === 'undefined') {
                 title: '', // titre du formulaire de saisie d'adresse
                 autocompleteListStyle: '', // Permet d'ajouter une classe css spécifique à la liste des résultats retournés
                 ihmModelAndVersion: 'bootstrap4', // Modele et version d'ihm à utiliser (bootstrap4, bootstrap3,...)
-                login: 'ihm_services_adresses', // Login du service serca
-                password: 'SAi0DFgoJf', // Mot de passe du service serca
+                login: 'ihm_checkaddress_damart', // Login du service serca
+                password: 'En8eTH,FvO', // Mot de passe du service serca
                 maxRetries: 3, // Nombre de tentative de rejeu en cas d'erreur du service distant
                 maxRetriesTimeout: 3000, // Délai en ms avant de retenter un appel
                 ajaxTimeout: 1000, // Délai avant de considérer que ça ne répond
@@ -646,7 +646,7 @@ if (typeof jQuery === 'undefined') {
                 lockFormRow6: true, // Bloque la saisie des autres champs s le champ d'adresse 6 n'ets pas valide
                 displayAddressLabel: false, // Affiche l'adresse complète validée en dessous du formulaire
                 corpsProxy: "", // Url du proxy cors
-                distantDNS: "https://www.serca.preprod.laposte.fr", // Nom de domaine du service serca
+                distantDNS: "https://https://www.serca.laposte.fr", // Nom de domaine du service serca
             };
 
             /* @TODO Add user trigger... */
