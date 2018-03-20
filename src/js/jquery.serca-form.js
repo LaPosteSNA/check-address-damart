@@ -646,7 +646,7 @@ if (typeof jQuery === 'undefined') {
                 lockFormRow6: true, // Bloque la saisie des autres champs s le champ d'adresse 6 n'ets pas valide
                 displayAddressLabel: false, // Affiche l'adresse complète validée en dessous du formulaire
                 corpsProxy: "", // Url du proxy cors
-                distantDNS: "https://https://www.serca.laposte.fr", // Nom de domaine du service serca
+                distantDNS: "https://www.serca.laposte.fr", // Nom de domaine du service serca
             };
 
             /* @TODO Add user trigger... */
